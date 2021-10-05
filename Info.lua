@@ -6,4 +6,10 @@ return {
     LrToolkitIdentifier = "com.picfair-test",
     LrPluginName = "Picfair-Test",
     LrPluginInfoUrl="https://support.picfair.com/hc/en-us",
+    LrExportMenuItems = {
+        {
+          title = "Hello",
+          file = "hello.lua",
+        },
+      },  
   }
