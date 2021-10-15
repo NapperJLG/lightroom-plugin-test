@@ -18,7 +18,10 @@ function PicfairAPI.uploadPic(data)
   }
 
   local mimeChunks = {
-    contentData
+    contentData,
+    {name = 'title', value = data.title},
+    {name = 'caption', value = data.caption},
+    {name = 'tags', value = data.tags}
   }
 
   local result, hdrs = LrHttp.postMultipart(postURL, mimeChunks)
